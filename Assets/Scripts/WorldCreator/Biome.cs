@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Utils.NET.Collections;
 using Utils.NET.Utils;
+using Range = Utils.NET.Collections.Range;
 
 public enum BiomeType
 {

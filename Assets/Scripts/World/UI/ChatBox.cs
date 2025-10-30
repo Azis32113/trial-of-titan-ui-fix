@@ -96,7 +96,8 @@ public class ChatBox : MonoBehaviour
         screenPos.x *= Screen.height / (float)owner.world.worldCamera.targetTexture.height;
         screenPos.y *= Screen.width / (float)owner.world.worldCamera.targetTexture.width;
 #else
-        var position = owner.transform.position + new Vector3(0, 0, -owner.GetHeight() - 0.25f);
+        // var position = owner.transform.position + new Vector3(0, 0, -owner.GetHeight() - 0.25f);
+        var position = owner.transform.position;
         var screenPos = owner.world.worldCamera.WorldToScreenPoint(position);
 #endif
         //var screenPos = new Vector3((viewportPosition.x / Screen.width) * gameView.rect.width, (viewportPosition.y / Screen.height) * gameView.rect.height, 0);

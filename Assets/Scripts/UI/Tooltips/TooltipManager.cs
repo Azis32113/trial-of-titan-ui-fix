@@ -15,6 +15,8 @@ public class TooltipManager : MonoBehaviour
 
     private Tooltip currentTooltip;
 
+    public Transform trayTransform;
+
     public World world;
 
     private void Awake()

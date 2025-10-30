@@ -1784,6 +1784,7 @@ MonoBehaviour:
   - {fileID: 5806976424004113358, guid: 13ed4b9d51330e846b0b482abf69b4cd, type: 3}
   - {fileID: 3462834059744329686, guid: e8388c44e53a1b3438a6ec691cfb1818, type: 3}
   - {fileID: 5026440234359311156, guid: 7a0ed75fa1328334c940ff71d0c57a9c, type: 3}
+  trayTransform: {fileID: 0}
   world: {fileID: 872733076}
 --- !u!114 &61777200
 MonoBehaviour:
@@ -3548,6 +3549,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179818297}
   m_CullTransparentMesh: 0
+--- !u!1 &182413727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7425207240643739664, guid: fe8f055bf07b74d4296578edad9ac0f8, type: 3}
+  m_PrefabInstance: {fileID: 7425207240838764081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &182413729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182413727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &182838100
 GameObject:
   m_ObjectHideFlags: 0
@@ -52193,7 +52243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5790464006406166778, guid: 529d32af1d64c474a9e1d7c4021819ee, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5
+      value: -5.0000076
       objectReference: {fileID: 0}
     - target: {fileID: 5790464006406166778, guid: 529d32af1d64c474a9e1d7c4021819ee, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -53070,6 +53120,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7425207240643739664, guid: fe8f055bf07b74d4296578edad9ac0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 182413729}
     - targetCorrespondingSourceObject: {fileID: 7425207241796235724, guid: fe8f055bf07b74d4296578edad9ac0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1896486699}

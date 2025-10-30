@@ -1084,3 +1084,4 @@ MonoBehaviour:
   cantUseColor: {r: 0.3019608, g: 0.08627451, b: 0.14509805, a: 1}
   soulboundColor: {r: 0.14070842, g: 0.17427634, b: 0.3207547, a: 1}
   neutralColor: {r: 0.9056604, g: 0.8349439, b: 0.2776789, a: 1}
+  offsetPos: {x: -178.9, y: -299.2}

@@ -37,11 +37,15 @@ namespace Pc
 
         public Color neutralColor = new Color(233 / 255.0f, 187 / 255.0f, 48 / 255.0f, 1);
 
+        public Vector2 offsetPos = new Vector2(-170, -Screen.height * 0.26f);
+        
         private static Color greenColor = new Color(0.2938324f, 0.8773585f, 0.3517506f, 1);
 
         private static Color redColor = new Color(0.8773585f, 0.2300355f, 0.2027857f, 1);
-
+        
         private bool justAddedLine = false;
+
+        public override bool FollowMouse => false;
 
         protected override void Load(Player player, bool owned, Item obj)
         {
@@ -76,6 +80,8 @@ namespace Pc
 
             contentLabel.ForceMeshUpdate();
             contentLabel.rectTransform.sizeDelta = contentLabel.bounds.size;
+            
+            background.rectTransform.anchoredPosition = offsetPos;
         }
 
         public void NewLine()

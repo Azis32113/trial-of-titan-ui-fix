@@ -88,14 +88,15 @@ public class CharactersMenu : MonoBehaviour
 
     private GameObject CreateCharacterPreview()
     {
-        var character = Instantiate(characterPrefab);
+        var character = Instantiate(characterPrefab, characterPrefab.transform.parent);
         character.transform.SetParent(characterPrefab.transform.parent);
+        character.transform.localScale = Vector3.one;
         return character;
     }
 
     private GameObject CreateCharacterCreate()
     {
-        var create = Instantiate(createCharacterPrefab);
+        var create = Instantiate(createCharacterPrefab, createCharacterPrefab.transform.parent);
         create.transform.SetParent(createCharacterPrefab.transform.parent);
         return create;
     }
